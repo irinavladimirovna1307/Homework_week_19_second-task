@@ -1,15 +1,95 @@
-.title,
-.post__form,
-.post__wrapper {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1.title {
   text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post__form {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.post__form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.post__button {
+  background: #ff758c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 100%;
+}
+
+.post__button:hover {
+  background: #ff5f6d;
+}
+
+.post__container {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
 }
 
 .post__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .posted__title {
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff5f6d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
